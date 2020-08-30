@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100vw;
+}
+.centrar-texto{
+    text-align:center;
+}
+.left-texto{
+    text-align: left;
+}
+p{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+}
+span{
+    font-size: 15px;
+    font-weight: 600;
+}
+/*
+.banner{
+    background-image: url('{{}}');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100vw;
+}
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    background-color: #000000;
+}
+.navegacion a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+/*
+h1.left-texto.name,.Disclaimers h2  {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.Contenedor-informacion p{
+font-size: 10px;
+}
+/*
+.main .name::after{
+    content: "";
+    border-bottom: solid 1px #000;
+    width: 100%;
+    display: flex;
+    height: 12px;
+    align-self: center;
+}
+*/
+.main .name::after{
+    content: "";
+    border-bottom: solid 1px #000;
+    width: 100%;
+    display: flex;
+    height: 12px;
+    align-self: center;
+}
+.contenedor-producto {
+    display: flex;
+    justify-content: space-around;
+}
+.foto {
+    margin-right: 10px;
+}
+.contenedor-producto .producto .foto img{
+    width: 18vw;
+}
+.Description{
+    color: #000000;
+    font-size: 15px;
+}
+
+.content-moreItems .content-items{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.content-items .items{
+    flex-direction: column;
+}
+.img-items{
+    width: 10vw;
+}
+.img-items img{
+    width: 100%;
+}
+footer.Disclaimers {
+    display: flex;
+    flex-direction: column;
+}
+.Disclaimers.main-Disclaim >  h2 {
+ font-size: 15px;
+}
+.Disclaimers > h2::after{
+    content: "";
+    border-bottom: solid 1px #000;
+    width: 100%;
+    display: flex;
+    align-self: center;
+
+}
+.contenedor-disclaimers {
+    display: flex;
+    background-color: #707070;
+    color: #fff;
+}
+h2.texto-left {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin: 33px 0 21px;
+}
+.contenedor-disclaimers span{
+    font-weight: 600;
+}
+.contenedor-disclaimers p{
+    font-size: 15px;
+}
+descriptios-disclaimers{
+width: 100%;
+width: fit-content;
+}
+.descriptios-disclaimers p{
+    text-align: justify;
+    font-size: 12px;
+    margin: 10px;
+}
+</style>
+<title></title>
+<header><!--
+<div class="banner"> </div>
+
+<div class="barra">
+<nav class="navegacion"><a href="https://www.ebay.com/str/twentyonemillions">All</a> <a href="https://www.ebay.com/str/twentyonemillions/Activewear/_i.html?_storecat=33315965018">Activewear</a> <a href="https://www.ebay.com/str/twentyonemillions/Cardigans/_i.html?_storecat=33315966018">Cardigans</a> <a href="https://www.ebay.com/str/twentyonemillions/Coats-Jackets/_i.html?_storecat=33315967018">Coats &amp; Jackets</a> <a href="https://www.ebay.com/str/twentyonemillions/Dresses/_i.html?_storecat=33315968018">Dresses</a> <a href="https://www.ebay.com/str/twentyonemillions/Hats-Caps/_i.html?_storecat=33315969018">Hats &amp; Caps</a> <a href="https://www.ebay.com/str/twentyonemillions/Other/_i.html?_storecat=1">Others</a></nav>
+</div>
+--></header>
+
+<main class="contenedor main">
+<h1 class="left-texto  name">{{name}}</h1>
+
+<div class="contenedor-producto">
+<div class="producto">
+<div class="foto"><img alt="" src="{{product_image_2}}"></div>
+</div>
+
+<div class="Contenedor-informacion">
+<div class="descripcion">
+                    <p class="Description"><span>Description:</span><br>{{description}}</p>
+                   <p><span>Materials:</span>{{feature_1}}</p>
+                    <p class="Condicion"><span>Condition:</span> {{Condition}}</p>
+                    <p class="manufacturer"><span>Manufacturer:</span>{{manufacturer}}</p>
+                    <p class="UPC"><span>UPC:</span>{{UPC}}</p>
+</div>
+</div>
+</div>
+</main>
+<!--
+<section class="content-moreItems">
+<h2 class="centrar-texto">More Items</h2>
+
+<div class="content-items">
+<div class="items">
+<div class="img-items"><img alt="Imagen-producto" src="{{product_image_1}}"></div>
+
+<div class="text-items">
+<p>{{name}}</p>
+
+<p>{{Price}}</p>
+</div>
+</div>
+
+<div class="items">
+<div class="img-items"><img alt="Imagen-producto" src="{{product_image_2}}"></div>
+
+<div class="text-items">
+<p>{{name}}</p>
+
+<p>{{Price}}</p>
+</div>
+</div>
+
+<div class="items">
+<div class="img-items"><img alt="Imagen-producto" src="{{product_image_3}}"></div>
+
+<div class="text-items">
+<p>{{name}}</p>
+
+<p>{{Price}}</p>
+</div>
+</div>
+
+<div class="items">
+<div class="img-items"><img alt="Imagen-producto" src="{{product_image_4}}"></div>
+
+<div class="text-items">
+<p>{{name}}</p>
+
+<p>{{Price}}</p>
+</div>
+</div>
+</div>
+</section> 
+-->
+
+<footer class="Disclaimers">
+<h2 class="texto-left main-Disclaim"><bold>Disclaimers<bold></bold></bold></h2>
+
+<div class="contenedor-disclaimers">
+<div class="descriptios-disclaimers">
+<p style="text-align: justify;">21 Millions are part of the Pevas Group and guarantees that all our products are purchased from a major distributor. If you have any doubts about the authenticity of your purchase feel free to contact us. All your purchases can be authenticated by one of the many trusted online authentication services.</p>
+</div>
+
+<div class="descriptios-disclaimers">
+<p style="text-align: justify;">The color seen on the pictures may vary a little bit to the color of the real item, this may due to lighting and different monitor calibration. Our photographs show exactly what the products include. If it is not shown in the image it does not come with it. Sometimes images are shown as a representation and may vary in color. Please check the title for the correct color and size.</p>
+</div>
+
+<div class="descriptios-disclaimers">
+<p style="text-align: justify;"><span>21 Millions</span> Revise the items and verify that they are as described in the original manifest of purchase. Some tags may fall off due to shipping handles. Some tags may be marked as re-tags for inventory restocking.<br>
+ </p>
+
+<p style="text-align: justify;">21 Millions may not be liable for shipping mishandle after the items leave our warehouse.</p>
+</div>
+</div>
+</footer>
